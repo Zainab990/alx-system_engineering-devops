@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 input_string = ARGV[0]
-pattern = /School/i
+pattern = /School/
 
 if input_string.match?(pattern)
   puts input_string
