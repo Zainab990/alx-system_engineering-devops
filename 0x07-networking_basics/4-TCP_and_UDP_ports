@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Display the header
+echo "Listening Ports:"
+echo "----------------"
+
+# Get the listening sockets and their details
+netstat -tuln | grep 'LISTEN' | awk '{print $4, $7}' | while read line; do
+    port=$(echo $line | awk '{print $1}' | awk -F: '{print $2}')
+    pid=$(echo $line | awk '{print $2}' | awk -F/ '{print $1}')
+    program=$(echo $line | awk '{print $2}' | awk -F/ '{print $2}')
+    echo "Port: $port, PID: $pid, Program: $program"
+done
+
