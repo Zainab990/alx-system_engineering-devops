@@ -3,7 +3,7 @@
 input_string = ARGV[0]
 
 # Define a regular expression pattern
-pattern = /^h.*n/
+pattern = /^h.*n$/
 
 # Find all matches of the pattern in the input string
 matches = input_string.scan(pattern)
