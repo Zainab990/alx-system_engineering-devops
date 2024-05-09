@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 # Get the first command-line argument
 input_string = ARGV[0]
 
@@ -14,5 +13,4 @@ result = matches.join
 
 # Print the result
 puts result
-
 
