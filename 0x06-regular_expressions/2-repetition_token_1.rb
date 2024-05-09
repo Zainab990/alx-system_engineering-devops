@@ -1,12 +1,5 @@
 #!/usr/bin/env ruby
 
-input_string = ARGV[0]
-pattern = /hb[^o]+n/  # Matches "hbn", "hbtn", "hbttn", "hbtttn", "hbttttn", "hbtttttn", etc.
+*/repating/*
+puts ARGV[0].scan(/hb?tn/).join
 
-if input_string.match?(pattern)
-  puts input_string
-else
-  puts "No match"
-end
-
-puts ""  # Ensure the script ends with a new line
