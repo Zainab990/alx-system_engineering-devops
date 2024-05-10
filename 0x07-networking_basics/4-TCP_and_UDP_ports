@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Display the header
 echo "Listening Ports:"
 echo "----------------"
