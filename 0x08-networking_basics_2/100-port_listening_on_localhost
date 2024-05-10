@@ -1,5 +1,4 @@
 #!/bin/bash
 
-# Start listening on port 98 using netcat
-nc -l 127.0.0.1 98
-
+# Bash script that listens on port 98 on localhost.
+nc -l localhost 98
